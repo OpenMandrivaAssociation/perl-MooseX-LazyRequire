@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upst
 
 BuildRequires: perl(Moose)
 BuildRequires: perl(MooseX::Types::Moose)
+BuildRequires: perl(Test::Exception)
 BuildRequires: perl(aliased)
 BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
@@ -48,5 +49,3 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
