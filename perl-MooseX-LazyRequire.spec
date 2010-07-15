@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Required attributes which fail only when trying to use them
 License:    GPL+ or Artistic
@@ -17,6 +17,7 @@ BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More) >= 0.900.0
 BuildRequires: perl(aliased)
 BuildRequires: perl(namespace::autoclean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -32,11 +33,10 @@ constructor parameter or through a writer method.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -47,6 +47,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes LICENSE README
+%doc Changes LICENSE README META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
