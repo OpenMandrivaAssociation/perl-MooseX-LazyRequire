@@ -1,2 +1,4 @@
+removed_sources:
+  MooseX-LazyRequire-0.07.tar.gz: a9378b0932949b249dd8bbbac8ded0690479f47b
 sources:
-  "MooseX-LazyRequire-0.07.tar.gz": a9378b0932949b249dd8bbbac8ded0690479f47b
+  MooseX-LazyRequire-0.10.tar.gz: 87a2b04976ed93271f00d3077f100693a504edde
