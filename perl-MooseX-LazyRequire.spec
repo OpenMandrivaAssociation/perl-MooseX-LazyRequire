@@ -12,6 +12,8 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/MooseX/MooseX-LazyRequire-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::Fatal)
+BuildRequires: perl(Test::CheckDeps)
 BuildRequires:	perl(Moose)
 BuildRequires:	perl(MooseX::Types::Moose)
 BuildRequires:	perl(Test::Exception)
